@@ -1,0 +1,160 @@
+/* Điện thoại đứng */
+@media screen and (min-width:240px) {
+  
+}
+/* Điện thoại ngang và Máy tính bảng dọc*/
+@media screen and (min-width:768px) {
+   .list-tour{
+    display: flex;
+   }
+  nav{
+    display: flex;
+    justify-content: center;
+  }
+  .menu{
+    display: none;
+  }
+  .grid-container{
+    display: grid;
+    grid-template-areas: 
+    'item1 item1 item2 item3'
+    'item1 item1 item4 item5';
+    gap: 10px;
+  }
+
+  .feedback{
+    display: flex;
+  }
+}
+/* Laptop  và máy tính bảng ngang*/
+@media screen and (min-width:1024px) {
+   main,header{
+    margin-left: 12%;
+    margin-right: 12%;
+   }
+}
+
+/* day la header */
+* {
+    margin: 0;
+}
+:root {
+   --color1: #FC6600;
+   --COLOR2: white;
+}
+header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+  align-items: center;
+}
+/* header img{
+    width: 110px;
+} */
+/* day là menu va nav */
+.menu{
+    background-color: var(--COLOR2);
+    color: rgb(10, 9, 9);
+    font-size: 33;
+    padding: 7px;
+}
+nav{
+    background-color: var(--COLOR2);
+    padding: 10px;
+}
+nav img{
+    width: 110px;
+}
+nav a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    margin: 5px;
+    text-align: center;
+}
+/* day la banner */
+.slide{
+    position: relative;
+    text-align: center;
+    }
+   
+    .slide .bi-caret-left{
+   
+    position: absolute;
+    left: 10px;
+    top: 45%;
+    font-size: 2rem;
+    color: white;
+}
+    .slide .bi-caret-right{
+    
+    position: absolute;
+    right: 10px;
+    top: 45%;
+    font-size: 2rem;
+    color: white;}
+    .slide .list{
+    position: absolute;
+    bottom: 5%;
+    font-size: 5rem;
+    text-align: center;
+    left: calc(50% - 40px);
+    }
+    /* Danh sach san pham tour */
+.list-tour article{
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    margin: 10px;
+}
+.list-tour img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.list-tour p{
+    padding: 10px;
+}
+main h2{
+    text-align: center;
+    color: #FC6600;
+}
+/* tour quoc te */
+.item1 {
+    grid-area: item1;
+    }
+    .item2 {
+    grid-area: item2;
+}
+    .item3 {
+    grid-area: item3;
+    }
+    .item4 {
+    grid-area: item4;
+    }
+    .item5 {
+    grid-area: item5;
+    }
+    .grid-container img{
+    width: 100%;
+    }
+    .grid-container{
+    padding: 10px;
+    }
+    /* Phan hoi khach hang */
+    .feedback{
+        text-align: center;
+    }
+    
+    .feedback img{
+    width: 250px;
+    height: 250px;
+    border: 1px solid green;
+    border-radius: 50%;
+    }
+    .feedback article{
+    padding: 10px;
+    }
+    .feedback pi{
+        color: rgba(231, 198, 12, 0.908);
+    }
+   
+    

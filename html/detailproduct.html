@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fauget</title>
+    <link rel="stylesheet" href="../css/detailproduct.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <img src="../img/logo2.png" alt="">
+        <div class="menu">
+            <i class="bi bi-list"></i>
+        </div>
+        <div class="menu1">
+            <ul>
+                <li><a href="">Trang chủ </a></li>
+                <li><a href="">Giới thiệu</a></li>
+                <li><a href="">Tin tức</a></li>
+                <li><a href="">Tour trong nước </a></li>
+                <li><a href="">Tour quốc tế</a></li>
+                <li><a href="">Liên hệ</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="../img/thailan1.jpg" alt="" width="100%" id="productimg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="../img/thailan1.jpg" alt="" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="../img/thailan2.jpg" alt="" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="../img/thailan3.jpg" alt="" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="../img/thailan4.jpg" alt="" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <h1>THÁI LAN 5 SAO BANGKOK - PATTAYA 4N3Đ TOUR TRỌN GÓI BAO GỒM VÉ MÁY BAY</h1>
+                <h4><i class="bi bi-clock"></i> 7/7/2023</h4>
+                <h4><i class="bi bi-calendar"></i> 3 Ngày 2 Đêm</h4>
+                <h4><i class="bi bi-airplane"></i> Máy bay</h4>
+                <h3 class="price">5.490.000VND</h3>
+                <h5>Số vé: <input type="number" value="1"></h5>
+                <br>
+                <h3>Giới thiệu</h3>
+                <p>Đến với “Đất nước của nụ cười”du khách không chỉ thưởng ngoạn những cảnh đẹp,
+                    mua sắm thoải mái, chiêm ngưỡng những ngôi chùa với lối kiến trúc độc đáo,
+                    ấn tượng mà còn là dịp để bạn nghỉ ngơi, thư giãn cùng người thân của mình</p>
+                <div class="btn">
+                    <p>Đặt Vé Ngay</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <section>
+            <div>
+                <h1>LIÊN HỆ</h1>
+                <hr>
+                <p>Phương Tân Chánh Hiệp, Q.12, TP.HCM</p>
+                <p>Email: dulichviet@gmail.com</p>
+                <p>Điện Thoại: 0123456789 - 0987654321</p>
+                <p>Mã số thuế: 0311854004</p>
+                <p>GPKD lữ hành quốc tế số 79-400/2015/TCDL</p>
+            </div>
+            <div class="bando">
+                <h1>BẢN ĐỒ</h1>
+                <hr>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7836.888126970113!2d106.62451623275184!3d10.853790432170053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bee0b0ef9e5%3A0x5b4da59e47aa97a8!2zQ8O0bmcgVmnDqm4gUGjhuqduIE3hu4FtIFF1YW5nIFRydW5n!5e0!3m2!1svi!2s!4v1684896694765!5m2!1svi!2s"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div>
+                <h1>KẾT NỐI</h1>
+                <hr>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-youtube"></i>
+                <p>Đăng ký nhận tin khuyến mãi</p>
+                <input type="text" placeholder="Nhập email nhận khuyễn mãi" width="90%">
+                <button class="btn">ĐĂNG KÝ</button>
+            </div>
+        </section>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            $(".menu").click(function () {
+                $(".menu1").slideToggle();
+            });
+        });
+        var productimg = document.getElementById("productimg");
+        var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function () {
+            productimg.src = smallimg[0].src;
+        }
+
+        smallimg[1].onclick = function () {
+            productimg.src = smallimg[1].src;
+        }
+
+        smallimg[2].onclick = function () {
+            productimg.src = smallimg[2].src;
+        }
+
+        smallimg[3].onclick = function () {
+            productimg.src = smallimg[3].src;
+        }
+    </script>
+</body>
+
+</html>

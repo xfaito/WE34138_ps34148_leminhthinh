@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fauget</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body onload="loadtheme()">
+
+    <nav>
+        <img src="img/logo2.png" alt="">
+        <div class="menu">
+            <i class="bi bi-list"></i>
+        </div>
+        <div class="menu1">
+            <ul>
+                <li><a href="">Trang chủ </a></li>
+                <li><a href="">Giới thiệu</a></li>
+                <li><a href="">Tin tức</a></li>
+                <li><a href="">Tour trong nước </a></li>
+                <li><a href="">Tour quốc tế</a></li>
+                <li><a href="">Liên hệ</a></li>
+            </ul> 
+        </div>
+
+    </nav>
+    <div class="slide">
+        <img id="banner" src="img/pexels-alex-azabache-3757144.jpg" alt="" width="100%" />
+        <i class="bi bi-caret-left" onclick="prev()"></i>
+        <i class="bi bi-caret-right" onclick="next"></i>
+        <div class="list">
+            <span id="0">.</span>
+            <span id="1">.</span>
+            <span id="2">.</span>
+        </div>
+    </div>
+    <main>
+        <h2>Tour trong nước </h2>
+        <section class="list-tour">
+            <article>
+                <img src="img/pexels-foc-foodoncam-58597.jpg" alt="" srcset="">
+                <b>Tour Vịnh Hạ Long </b>
+                <p>Giá: 12.000.000Đ</p>
+            </article>
+            <article>
+                <img src="img/pexels-nguyễn-hiếu-2.jpg" alt="" srcset="">
+                <b>Tour Hà Nội </b>
+                <p>Giá: 12.000.000Đ</p>
+            </article>
+            <article>
+                <img src="img/pexels-tanya-pisarchuk-13871565.jpg" alt="" srcset="">
+                <b>Tour Đà Nẵng </b>
+                <p>Giá: 12.000.000Đ</p>
+            </article>
+            <article>
+                <img src="img/pexels-huy-lê-92090.jpg" alt="" srcset="">
+                <b>Tour Hội An </b>
+                <p>Giá: 12.000.000Đ</p>
+            </article>
+        </section>
+    </main>
+    <main>
+        <section class="list-tour">
+            <article>
+                <img src="img/pexels-asad-photo-maldives-1450353.jpg" alt="" srcset="">
+                <b>Tour Hải Phòng </b>
+                <p>Giá: 12.000.000Đ</p>
+            </article>
+            <article>
+                <img src="img/pexels-asad-photo-maldives-3601425.jpg" alt="" srcset="">
+                <b>Tour Nha Trang </b>
+                <p>Giá: 12.000.000Đ</p>
+            </article>
+            <article>
+                <img src="img/pexels-foc-foodoncam-58597.jpg" alt="" srcset="">
+                <b>Tour Vũng Tàu </b>
+                <p>Giá: 12.000.000Đ</p>
+            </article>
+            <article>
+                <img src="img/pexels-hugo-heimendinger-2984369.jpg" alt="" srcset="">
+                <b>Tour Phan Thiết </b>
+                <p>Giá: 12.000.000Đ</p>
+            </article>
+        </section>
+    </main>
+    <h2 class="title2">Tour đi nước ngoài</h2>
+    <div class="grid-container">
+        <div class="grid-item item1">
+            <a href="./html/contact.html">
+                <div class="grid-item-img main" style="background-image: url(img/thailand1.jpg);">
+                <div class="grid-item-img sub">
+                    <div class="info">
+                        <p class="title">Thái Lan</p>
+                        <p class="description">1000</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            
+        </div>
+        <div class="grid-item item2">
+            <div class="grid-item-img main" style="background-image: url(img/pexels-kin-pastor-777059.jpg);">
+                <a href=""></a>
+                <div class="grid-item-img sub">
+                    <div class="info">
+                        <p class="title">Singgapore</p>
+                        <p class="description">1000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item item3">
+            <div class="grid-item-img main" style="background-image: url(img/pexels-allphoto-bangkok-3226403.jpg);">
+                <a href=""></a>
+                <div class="grid-item-img sub">
+                    <div class="info">
+                        <p class="title">Campuchia</p>
+                        <p class="description">1000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item item4">
+            <div class="grid-item-img main" style="background-image: url(img/pexels-oleksandr-pidvalnyi-2166553.jpg);">
+                <a href=""></a>
+                <div class="grid-item-img sub">
+                    <div class="info">
+                        <p class="title">Indonesia</p>
+                        <p class="description">1000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item item5">
+            <div class="grid-item-img main" style="background-image: url(img/pexels-satoshi-hirayama-1979828.jpg);">
+                <a href=""></a>
+                <div class="grid-item-img sub">
+                    <div class="info">
+                        <p class="title">Nhật Bản</p>
+                        <p class="description">1000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item item6">
+            <div class="grid-item-img main" style="background-image: url(img/pexels-ethan-brooke-2128042.jpg);">
+                <a href=""></a>
+                <div class="grid-item-img sub">
+                    <div class="info">
+                        <p class="title">Hàn Quốc</p>
+                        <p class="description">1000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item item7">
+            <div class="grid-item-img main" style="background-image: url(img/pexels-brayden-law-2059661.jpg);">
+                <a href=""></a>
+                <div class="grid-item-img sub">
+                    <div class="info">
+                        <p class="title">Mỹ</p>
+                        <p class="description">1000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item item8">
+            <div class="grid-item-img main" style="background-image: url(img/pexels-patrick-mclachlan-995765.jpg);">
+                <a href=""></a>
+                <div class="grid-item-img sub">
+                    <div class="info">
+                        <p class="title">Úc</p>
+                        <p class="description">1000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="title2">Ảnh du lịch</h2>
+    <section class="gallery">
+        <div class="column-3">
+            <img src="img/pexels-alex-azabache-3757144.jpg" alt="">
+            <img src="img/pexels-allphoto-bangkok-3226403.jpg" alt="">
+            <img src="img/pexels-asad-photo-maldives-1450353.jpg" alt="">
+        </div>
+        <div class="column-4">
+            <img src="img/pexels-asad-photo-maldives-3601425.jpg" alt="">
+            <img src="img/pexels-brayden-law-2059661.jpg" alt="">
+            <img src="img/pexels-cottonbro-studio-5608211.jpg" alt="">
+            <img src="img/pexels-ethan-brooke-2128042.jpg" alt="">
+        </div>
+        <div class="column-3">
+            <img src="img/pexels-foc-foodoncam-58597.jpg" alt="">
+            <img src="img/pexels-hugo-heimendinger-2984369.jpg" alt="">
+            <img src="img/pexels-huy-lê-92090.jpg" alt="">
+        </div>
+        <div class="column-4">
+            <img src="img/pexels-kin-pastor-777059.jpg" alt="">
+            <img src="img/pexels-michael-block-3225528.jpg" alt="">
+            <img src="img/pexels-nancy-wächtler-5857863.jpg" alt="">
+            <img src="img/pexels-satoshi-hirayama-1979828.jpg" alt="">
+        </div>
+
+    </section>
+    <h2 class="title3">Phản hồi của khách hàng</h2>
+    <hr>
+    <section class="feedback">
+        <article>
+            <img src="img/pexels-andrea-piacquadio-774909.jpg" alt="">
+            <p>Beluga</p>
+            <p>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+            </p> <span>
+                <i>
+                    " Tôi và gia đình đã có chuyến đi du lịch thật thoải mái và tuyệt vời với dịch vụ Du lich
+                </i>
+            </span>
+
+        </article>
+        <article>
+            <img src="img/pexels-pixabay-220453.jpg" alt="">
+            <p>Andrew</p>
+            <p>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+            </p> <span>
+                <i>
+                    " Tôi và gia đình đã có chuyến đi du lịch thật thoải mái và tuyệt vời với dịch vụ Du lich
+                </i>
+            </span>
+        </article>
+        <article>
+            <img src="img/pexels-simon-robben-614810.jpg" alt="">
+            <p>Simon</p>
+            <p>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+            </p> <span>
+                <i>
+                    " Tôi và gia đình đã có chuyến đi du lịch thật thoải mái và tuyệt vời với dịch vụ Du lich
+                </i>
+            </span>
+        </article>
+    </section>
+
+    </main>
+
+    <footer>
+        <section>
+            <div>
+                <h1>LIÊN HỆ</h1>
+                <hr>
+                <p>Phương Tân Chánh Hiệp, Q.12, TP.HCM</p>
+                <p>Email: dulichviet@gmail.com</p>
+                <p>Điện Thoại: 0123456789 - 0987654321</p>
+                <p>Mã số thuế: 0311854004</p>
+                <p>GPKD lữ hành quốc tế số 79-400/2015/TCDL</p>
+            </div>
+            <div class="bando">
+                <h1>BẢN ĐỒ</h1>
+                <hr>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7836.888126970113!2d106.62451623275184!3d10.853790432170053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bee0b0ef9e5%3A0x5b4da59e47aa97a8!2zQ8O0bmcgVmnDqm4gUGjhuqduIE3hu4FtIFF1YW5nIFRydW5n!5e0!3m2!1svi!2s!4v1684896694765!5m2!1svi!2s"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div>
+                <h1>KẾT NỐI</h1>
+                <hr>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-youtube"></i>
+                <p>Đăng ký nhận tin khuyến mãi</p>
+                <input type="text" placeholder="Nhập email nhận khuyễn mãi" width="90%">
+                <button class="btn">ĐĂNG KÝ</button>
+            </div>
+        </section>
+    </footer>
+
+
+    <script>
+        $(document).ready(function () {
+            $(".menu").click(function () {
+                $(".menu1").slideToggle();
+            });
+        });
+
+        var hinh = [
+            'img/pexels-alex-azabache-3757144.jpg',
+            'img/pexels-nancy-wächtler-5857863.jpg',
+            'img/pexels-pierre-blaché-2901209.jpg',
+        ];
+
+        var index = 0;
+        function prev() {
+            index--;
+            if (index < 0) index = hinh.length - 1;
+            document.getElementById('banner').src = hinh[index]; document.getElementById('0').style.color = 'white';
+            document.getElementById('1').style.color = 'white'; document.getElementById('2').style.color = 'white'; document.getElementById(index).style.color = '#1598d4';
+        }
+        function next() {
+            index++;
+            if (index == hinh.length) index = 0;
+            document.getElementById('banner').src = hinh[index]; document.getElementById('0').style.color = 'white';
+            document.getElementById('1').style.color = 'white';
+            document.getElementById('2').style.color = 'white'; document.getElementById(index).style.color = '#1598d4';
+        }
+        setInterval('next()', 2000);
+// var images = document.getElementById('banner');
+//         for (var i = 0; i < images.length; i++) {
+//             images[i].style.width = '100%';
+//             images[i].style.height = '300px';
+//         }
+    </script>
+</body>
+
+</html>
